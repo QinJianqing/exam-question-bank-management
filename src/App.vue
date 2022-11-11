@@ -1,15 +1,14 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+  <Management />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Management from './views/index.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Management
   }
 }
 </script>
