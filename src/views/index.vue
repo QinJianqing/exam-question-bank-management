@@ -1,6 +1,6 @@
 <template>
   <div class="warp">
-    <Search @search="search" @create="create" />
+    <Top @search="search" @create="create" />
 
     <a-spin size="small" tip="保存中..." :spinning="saveLoading">
       <a-form v-show="showCreate">
@@ -50,13 +50,13 @@
 </template>
 
 <script>
-import Search from "./components/search.vue";
+import Top from "./components/top.vue";
 import ExamList from "./components/examList.vue";
 import { message } from 'ant-design-vue';
 
 export default {
   components: {
-    Search,
+    Top,
     ExamList,
   },
   data() {
